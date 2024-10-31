@@ -1,0 +1,435 @@
+@charset "utf-8";
+/*デフォルト*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn_login {
+    color: darkgray;
+    font-weight: 700;
+    font-size: 14px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px 0 5px;
+    border-radius: 2px;
+    position: relative;
+}
+/*
+.btn_login:before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background:gray;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+/*ヘッダー*/
+.header > .container {
+    display: flex;
+    height: 64px;
+    align-items: center;
+}
+.login {
+    padding-left: 10px;
+    padding-top: 7px;
+}
+/*サブナビメニュー*/
+.sub_nav_header {
+    border: 1px solid #ccc;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+}
+.sub_nav_header > .list_sub_nav_header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+.list_nav {
+    display: flex;
+    padding-left: 7px;
+}
+.s_nav {
+    position: relative;
+    color: rgb(126, 126, 126);
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 8px;
+    margin-right: 20px;
+}
+
+/*ロゴ*/
+.area_logo_header {
+    margin: 0 0 0 10px;
+}
+.area_logo_header .logo {
+    display: block;
+    margin-top: 7px;
+    margin-left: 20px; 
+    padding: 0;
+    font-weight: bold;
+    font-size:  20px;
+}
+/*フォームヘッダー*/
+.form_header {
+    margin: 0 auto;
+}
+.search_container{
+    position: flex;
+    margin: 0 auto;
+  }
+.search_container input[type="text"]{
+    border: 1px solid #999;
+    padding: 1px 5px;
+    border-radius: 20px;
+    height: 2.0em;
+    margin-left: 10px;
+    width: 250px;
+    overflow: hidden;
+  }
+.search_container input[type="text"]:focus {
+    outline: 0;
+  }
+.search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: none;
+    background: none;
+    color: #3879D9;
+    outline : none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+/*ナビ_ヘッダー*/
+.nav_header {
+   /* margin-left: 0 0 0 auto;*/
+}
+.list_nav_header {
+    display: flex;   
+}
+.list_nav_header > li + li {
+    margin: 0 0 0 15px;
+}
+.list_nav_header a:not(.btn_login){
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: gray;
+}
+/*サイドバー*/
+
+.sidebar {
+    flex: 0 0 170px;
+}
+.sidebar .box {
+}
+.sidebar .box + .box {
+    border-top:  1px solid #ccc;
+} 
+/*サイドバー_ナビリスト*/
+.list_nav_sidebar {
+    margin-left: -10px;
+}
+.list_nav_sidebar a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    font-size: 15px;
+    color:  rgb(126, 126, 126);
+    font-weight: 700;
+}
+
+/*アイコン要素
+.list_nav_sidebar a:before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background:gray;
+    position: absolute;
+    top: 50%;
+    left: 23px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+/*サイドバー_ログイン*/
+.area_register_sidebar {
+    padding: 0 30px;
+}
+.area_register_sidebar .discription{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.area_register_sidebar .wrap-button {
+    margin-top: 10px;
+}
+/*メイン*/
+.main {
+    flex: auto;
+    min-width: 10px;
+    padding: 30px 30px 30px 0 ;
+}
+.main .box {
+    padding: 10px 0;
+}
+.main .box + .box {
+    border-top: 3px solid #ccc;
+}
+.main .box .title {
+    font-size: 24px;
+}
+/*ビデオリスト*/
+.list_video{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+}
+.list_video > li {
+    padding: 8px;
+    width: 25%;
+}
+/*サムネイル 投稿画像*/
+.list_video .thumb {
+    width: 100%;
+    background-image: url(/images/銀魂サムネ.jpg);
+    background-size: cover;
+    border-radius: 1%;
+    
+}
+.list_video .thumb:before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 65.25%;
+}
+.list_video .thumb2 {
+    width: 100%;
+    background-image: url(/images/ナルトサムネ.jpg);
+    background-size: cover;
+    
+}
+.list_video .thumb2:before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 65.25%;
+}
+.list_video .layout {
+    display: flex;
+    margin:10px 0 0;
+}
+.list_video .eye {
+    flex: 0 0 40px;
+    margin-right: 0 10px 0 0;
+}
+/*アイキャッチ*/
+.list_video .img {
+    width: 100%;
+    border-radius: 50%;
+    background-image: url(/images/沖田.jpeg);
+    background-size:cover;
+}
+.list_video .img:before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+}
+.list_video .img2 {
+    width: 100%;
+    border-radius: 50%;
+    background-image: url(/images/ナルト.jpg);
+    background-size:cover;
+}
+.list_video .img2:before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+}
+/*テキスト*/
+.list_video .text {
+    flex: auto;
+    min-width: 10px;
+}
+.list_video .text .user {
+    font-size: 15px;
+}
+.list_video .text .title {
+    font-size: 14px;
+}
+.list_video .text .count {
+    font-size: 13px;
+}
+/*ページレイアウト*/
+.layout_page {
+    display: flex;
+}
+
+@media screen and (min-width:703px){
+    #btn-gnavi  {
+        display: none;
+    }
+    #global-navi {
+        display: none;
+    }
+    #closeWindow {
+        display: none;
+    }
+
+
+
+}
+@media screen and (max-width:1200px){
+    .list_video > li {
+        padding: 8px;
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .list_video > li {
+        padding: 8px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:702px){
+    .list_video > li {
+        padding: 8px;
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    } 
+
+    .nav_header {
+        display: none;
+    }
+
+   
+    /*　ハンバーガーボタン　*/
+    #wrapper #global-navi {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background:#333;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: .3s ease-in-out;     /*アニメーション表示用の設定*/
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    }
+    #wrapper #global-navi ul{
+        padding:0px;
+    }
+    #wrapper #global-navi ul li {
+        display:block;
+        padding: 9px 28px;
+        border-bottom: 1px dotted #555;
+        background-color: #444;
+    }
+    #wrapper #global-navi ul li a{
+        text-decoration: none;
+        color: #ddd;
+        width: 99%;
+        display:block;
+    }
+
+    /* ハンバーガーボタン */
+    #wrapper #btn-gnavi {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper #btn-gnavi span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper #btn-gnavi span:nth-child(1) {
+        top: 0;
+    }
+    #wrapper #btn-gnavi span:nth-child(2) {
+        top: 10px;
+    }
+    #wrapper #btn-gnavi span:nth-child(3) {
+        top: 20px;
+    }
+
+    /* 閉じる用のカバーウィンドウ */
+    #closeWindow {
+        display: none;   /*はじめは隠しておく*/
+        position: fixed;
+        top: 0;          /*全体を覆う*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0;
+    }
+    /* カバーウィンドウ開閉アニメ用キーフレーム */
+    @keyframes winOpen {
+    from {opacity: 0;}
+    to   {opacity: .5;}
+    }
+    @keyframes winClose {
+    from {opacity: .5;}
+    to   {opacity: 0;}
+    }
+
+@media screen and (max-width:550px){
+    .search_container input[type="text"]{
+        border: 1px solid #999;
+        padding: 1px 5px;
+        border-radius: 20px;
+        height: 2.0em;
+        margin-left: 10px;
+        width: 150px;
+        overflow: hidden;
+      }
+}
+
+@media screen and (max-width:376px){
+    .search_container input[type="text"]{
+        border: 1px solid #999;
+        padding: 1px 5px;
+        border-radius: 20px;
+        height: 2.0em;
+        margin-left: 10px;
+        width: 100px;
+        overflow: hidden;
+      }
+   
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>税金.main</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascript/index.js" rel="stylesheet"></script>
+</head>
+<body>
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="container">
+            <!--ロゴ-->
+            <div class="area_logo_header">
+                <a href="" class="logo">税金アプリ</a></div>
+            <!--フォーム-->
+            <form method="get" action="#" class="search_container">
+                <input class="search_text" type="text" size="10" placeholder="　キーワード">
+                <input class="search_icon" type="submit" value="&#xf002">
+            </form>
+            <!--会員登録、ログイン-->
+            <nav class="nav_header">
+                <ul class="list_nav_header">
+                    <li class="login"> <a href="" class="btn_login">会員登録</a></li>
+                    <li class="login"> <a href="" class="btn_login">ログイン</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--ハンバーガーメニュー-->
+        <div id="wrapper">
+            <!-- ハンバーガーメニュー -->
+            <div id="btn-gnavi">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              <!-- メニュー -->
+              <nav id="global-navi">
+                <ul>
+                  <li><a href="index.html">ホーム</a></li>
+                  <li><a href="">会員登録</a></li>
+                  <li><a href="">ログイン</a></li>
+                  <li><a href="">ブックマーク</a></li>
+                  <li><a href="">今日の記事</a></li>
+                  <li><a href="">おすすめ</a></li>
+                  <li><a href="">新社会人必見</a></li>
+               </ul>
+              </nav>
+            </div>
+            <!-- 透明な背景ウィンドウ(閉じる専用) -->
+            <div id="closeWindow"></div>
+          </div>
+    </header>
+    <div class="sub_nav_header">
+        <nav class="list_sub_nav_header">
+            <ul class="list_nav">
+                <li class="s_nav">今日の記事</li>
+                <li class="s_nav">おすすめ</li>
+                <li class="s_nav">新社会人必見</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="layout_page">
+    <!--サイドバー-->
+ <aside class="sidebar">
+        <div class="box">
+            <ul class="list_nav_sidebar">
+                <li><a href="">ホーム</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul class="list_nav_sidebar">
+                <li><a href="">今日の記事</a></li>
+            </ul>
+        </div>
+<!--        <div class="box">
+            <div class="area_register_sidebar">
+            <p class="discription">動画の評価、コメント、チャンネル登録を行うにはログインをしてください。</p>
+            <div class="wrap-button">
+            <a href="" class="btn_login">ログイン</a>
+            </div>
+            </div>
+        </div> -->
+        <div class="box">
+            <ul class="list_nav_sidebar">
+                <li><a href="">おすすめ</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul class="list_nav_sidebar">
+                <li><a href="">新社会人必見</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!--メイン-->
+    <main class="main">
+        <div class="box">
+            <ul class="list_video">
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">　銀魂　劇場版　Full</p>
+                            <p class="user">銀魂（公式）</p>
+                            <p class="count">1000万回視聴</p>  
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb2"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img2"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">　ナルト 劇場版　Full</p>
+                            <p class="user">ナルト（公式）</p>
+                            <p class="count">100万回視聴</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img" >
+                          </div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+        <!--急上昇-->
+        <div class="box">
+            <h3 class="title">急上昇</h3>
+            <ul class="list_video">
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="thumb"></div>
+                        <div class="layout">
+                         <div class="eye">
+                          <div class="img"></div>
+                         </div>
+                         <div class="text">
+                            <p class="title">タイトルはここに表示。</p>
+                            <p class="user">ひろーー</p>
+                            <p class="count">10万</p>
+                         </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="box">
+            メインコンテンツ
+        </div>
+
+    </main>
+    <!-- なでしこ3ライブラリ -->
+<script src="https://nadesi.com/v3/3.0.70/release/wnako3.js?run" defer></script>
+<script type="なでしこ">
+＃---初期設定-----
+ナビフラグ＝オフ。
+
+＃---イベント-----
+「#btn-gnavi」をクリックした時には
+　もし、ナビフラグ＝オンならば、
+　　　ナビ閉じる。
+　違えば、
+　　　ナビ開く。
+　ここまで。
+ここまで。
+「#closeWindow」をクリックした時には
+　　ナビ閉じる。
+ここまで。
+
+＃---ナビ開閉-----
+●ナビ開く
+　ナビフラグ＝オン。
+　「#closeWindow」に{
+　　　"animation": "winOpen 0.3s linear 0s",
+　　　"display":"block",
+　　　"opacity":".5"
+　}をDOMスタイル一括設定。
+　「#global-navi」に{
+　　　"-webkit-transform":"translateX(-100%)",
+　　　"transform":"translateX(-100%)",　　　　//スライドして中身を表示。
+　}をDOMスタイル一括設定。
+ここまで。
+
+●ナビ閉じる
+　ナビフラグ＝オフ。
+　「#global-navi」に{
+　　　"-webkit-transform":"translateX(0%)",
+　　　"transform":"translateX(0%)",　　　　　//スライドして閉じる。
+　}をDOMスタイル一括設定。
+　「#closeWindow」に{
+　　　"animation": "winClose 0.3s linear 0s",
+　　　"opacity":"0",
+　}をDOMスタイル一括設定。
+　0.3秒後には
+　　「#closeWindow」の「display」に「none」をDOMスタイル設定。
+　ここまで
+ここまで。
+</script>
+</body>
+</html>
